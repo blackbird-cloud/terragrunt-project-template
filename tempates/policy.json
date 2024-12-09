@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "This policy allows a user to list all the buckets",
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "*"
+    }
+  ]
+}
