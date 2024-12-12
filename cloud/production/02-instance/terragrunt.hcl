@@ -14,7 +14,7 @@ locals {
 }
 
 # Import outputs from the vpc module
-depedency "vpc" {
+dependency "vpc" {
   config_path = "../01-vpc"
 }
 
@@ -27,5 +27,5 @@ inputs = {
   name          = "test-instance"
   instance_type = "t2.micro"
   # Reference outputs from the vpc module
-  vpc_id = depedency.vpc.outputs.vpc_id
+  vpc_id = dependency.vpc.outputs.vpc_id
 }
